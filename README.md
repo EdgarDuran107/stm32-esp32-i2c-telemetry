@@ -4,7 +4,7 @@ Este proyecto implementa un sistema robusto de adquisición de datos basado en u
 
 El flujo de información sigue esta jerarquía:
 
-Captura de Datos: La STM32L476RG actúa como el nodo de adquisición primaria, leyendo dos sensores de distancia (ej. ultrasónicos) y un sensor de temperatura (ej. termistor o LM35).
+Captura de Datos: La STM32L476RG actúa como el nodo de adquisición primaria, leyendo dos sensores de distancia (HC04,VL53LOX) y un sensor de temperatura (TERMISTOR NTC).
 
 Comunicación Inter-Chip: Los datos son empaquetados y transmitidos vía I2C hacia la ESP32.
 
@@ -21,8 +21,8 @@ Sensores: Distancia (x2) y Temperatura (x1).
 
 Protocolos de Comunicación: I2C, HTTP, UART.
 
-Software & Lenguajes: * C/C++: Firmware para STM32 y ESP32.
+Software & Lenguajes: C++: Firmware para STM32, Micropython: Para el ESP32.
 
-HTML/CSS: Interfaz de usuario embebida en la ESP32.
+HTML: Interfaz de usuario embebida en la ESP32.
 
-Python: Procesamiento y visualización de datos (Matplotlib/Plotly).
+Python: Procesamiento y visualización de datos (Matplotlib).
